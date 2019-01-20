@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddServiceFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcome_add"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:textSize="30dp"
+            android:text="Please describe your daycare service below:"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <EditText
+            android:id="@+id/daycare_name_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Name of Daycare Service"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart = "32dp"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toEndOf="@id/welcome_add"
+            app:layout_constraintStart_toStartOf="@id/welcome_add"
+            app:layout_constraintTop_toBottomOf="@id/welcome_add"/>
+
+        <EditText
+            android:id="@+id/description_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:hint="Description"
+            app:layout_constraintEnd_toEndOf="@+id/daycare_name_add"
+            app:layout_constraintStart_toStartOf="@+id/daycare_name_add"
+            app:layout_constraintTop_toBottomOf="@+id/daycare_name_add"
+            />
+        <EditText
+            android:id="@+id/street_addr_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Street Address"
+            app:layout_constraintEnd_toEndOf="@+id/description_add"
+            app:layout_constraintStart_toStartOf="@+id/description_add"
+            app:layout_constraintTop_toBottomOf="@+id/description_add"
+            />
+        <EditText
+            android:id="@+id/city_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="City"
+            app:layout_constraintEnd_toEndOf="@+id/street_addr_add"
+            app:layout_constraintStart_toStartOf="@+id/street_addr_add"
+            app:layout_constraintTop_toBottomOf="@+id/street_addr_add"
+            />
+        <EditText
+            android:id="@+id/state_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="State"
+            app:layout_constraintEnd_toEndOf="@+id/city_add"
+            app:layout_constraintStart_toStartOf="@+id/city_add"
+            app:layout_constraintTop_toBottomOf="@+id/city_add"
+            />
+        <EditText
+            android:id="@+id/country_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Country"
+            android:text="United States"
+            app:layout_constraintEnd_toEndOf="@+id/state_add"
+            app:layout_constraintStart_toStartOf="@+id/state_add"
+            app:layout_constraintTop_toBottomOf="@+id/state_add"
+            />
+
+        <LinearLayout
+            android:id="@+id/addservice_linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:layout_constraintEnd_toEndOf="@+id/country_add"
+            app:layout_constraintStart_toStartOf="@+id/country_add"
+            app:layout_constraintTop_toBottomOf="@+id/country_add"
+            android:gravity="center">
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Make this daycare public:"
+                android:textSize="25dp"/>
+            <CheckBox
+                android:id="@+id/addservice_publiccheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="1dp"
+            android:text="Add Service"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/addservice_linearlayout"
+            app:layout_constraintStart_toStartOf="@+id/addservice_linearlayout"
+            app:layout_constraintTop_toBottomOf="@+id/addservice_linearlayout"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

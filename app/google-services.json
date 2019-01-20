@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "481066542770",
+    "firebase_url": "https://carecomms-82b59.firebaseio.com",
+    "project_id": "carecomms-82b59",
+    "storage_bucket": "carecomms-82b59.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481066542770:android:d99c877fd42d1c98",
+        "android_client_info": {
+          "package_name": "samuelhaws.carecomms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481066542770-8oddkc19fe8228s8ta83v8lk95cri58t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGvEXcnR-_w3Kx6JYpx2PMwaoIkdwcVCE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

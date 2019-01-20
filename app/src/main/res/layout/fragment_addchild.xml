@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddServiceFragment">
+
+    <TextView
+        android:id="@+id/welcome_addchild"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:textSize="30dp"
+        android:text="Please enter your child's information below:"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/selectphoto_button_child"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="Tap here to select a profile image."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <ImageView
+                android:id="@+id/selectphoto_imageview_child"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="@id/selectphoto_button"
+                app:layout_constraintEnd_toEndOf="@id/selectphoto_button"
+                app:layout_constraintStart_toStartOf="@id/selectphoto_button"
+                app:layout_constraintTop_toTopOf="@id/selectphoto_button"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <EditText
+            android:id="@+id/fullname_childadd"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:imeOptions="actionNext"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart = "32dp"
+            android:layout_marginTop="5dp"/>
+
+        <EditText
+            android:id="@+id/nickname_childadd"
+            android:imeOptions="actionNext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:ems="10"
+            android:hint="Nickname"
+            />
+        <EditText
+            android:id="@+id/age_childadd"
+            android:imeOptions="actionNext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Age"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/gender_childadd"
+            android:imeOptions="actionNext"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Gender"
+            />
+        <EditText
+            android:id="@+id/healthinfo_childadd"
+            android:inputType="textMultiLine"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint="Health Information"
+            />
+
+        <Button
+            android:id="@+id/button_addchild"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:text="Add Child"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</FrameLayout>
