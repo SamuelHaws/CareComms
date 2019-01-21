@@ -1,0 +1,11 @@
+https://www.youtube.com/watch?v=s1fW7CpiB9c -- pop-up menu video tutorial
+
+https://stackoverflow.com/questions/660151/how-to-replicate-androideditable-false-in-code -- dynamically disabling EditText input
+
+https://medium.com/@eijaz/getting-started-with-tablayout-in-android-kotlin-bb7e21783761 - viewpager + tabs -- ViewPager and TabLayout integration
+
+https://stackoverflow.com/questions/7575921/illegalstateexception-can-not-perform-this-action-after-onsaveinstancestate-wit -- help with illegalstateexception (via transaction.commitAllowingStateLoss();)
+
+https://stackoverflow.com/questions/41790357/close-hide-the-android-soft-keyboard-with-kotlin -- hiding keyboard
+
+https://github.com/thaleslima/firebase-chat-sample -- displaying different card layouts with getItemViewType() based on UID
